@@ -128,6 +128,93 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-java基础回顾" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/ssbk.github.io/2019/08/23/java基础回顾/">java基础回顾</a>
+    </h1>
+  
+
+        
+        <a href="/ssbk.github.io/2019/08/23/java基础回顾/" class="archive-article-date">
+  	<time datetime="2019-08-23T00:26:29.077Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-23</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="HashMap-和-HashSet区别"><a href="#HashMap-和-HashSet区别" class="headerlink" title="HashMap 和 HashSet区别"></a>HashMap 和 HashSet区别</h2><p>如果你看过 <code>HashSet</code> 源码的话就应该知道：HashSet 底层就是基于 HashMap 实现的。（HashSet 的源码非常非常少，因为除了 <code>clone()</code>、<code>writeObject()</code>、<code>readObject()</code>是 HashSet 自己不得不实现之外，其他方法都是直接调用 HashMap 中的方法。</p>
+<table>
+<thead>
+<tr>
+<th>HashMap</th>
+<th>HashSet</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>实现了Map接口</td>
+<td>实现Set接口</td>
+</tr>
+<tr>
+<td>存储键值对</td>
+<td>仅存储对象</td>
+</tr>
+<tr>
+<td>调用 <code>put（）</code>向map中添加元素</td>
+<td>调用 <code>add（）</code>方法向Set中添加元素</td>
+</tr>
+<tr>
+<td>HashMap使用键（Key）计算Hashcode</td>
+<td>HashSet使用成员对象来计算hashcode值，对于两个对象来说hashcode可能相同，所以equals()方法用来判断对象的相等性，</td>
+</tr>
+</tbody></table>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/ssbk.github.io/2019/08/23/java基础回顾/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-常用工具地址" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
