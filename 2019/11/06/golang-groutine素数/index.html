@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://s1026157562.github.io/ssbk.github.io">
-  <title>sunsong�Ĳ���</title>
+  <title>Golang素数问题 | sunsong�Ĳ���</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="sunsong�Ĳ���">
-<meta property="og:url" content="https://s1026157562.github.io/ssbk.github.io/index.html">
+  <meta name="description" content="goroutine多协程求素数问题无缓冲通道  ​    例子：ch :=make(chan int) ​    无缓冲通道上的发送操作将会被阻塞，直到另外一个goroutine在对应的通道上执行接收操作，这时值传送完成，两个goroutine都可以继续执行。相反，如果接收操作先执行，接收方goroutine将阻塞，直到另一个goroutine在同一个通道上发送一个值。 ​    使用无缓冲通道进">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Golang素数问题">
+<meta property="og:url" content="https://s1026157562.github.io/ssbk.github.io/2019/11/06/golang-groutine素数/index.html">
 <meta property="og:site_name" content="sunsong�Ĳ���">
+<meta property="og:description" content="goroutine多协程求素数问题无缓冲通道  ​    例子：ch :=make(chan int) ​    无缓冲通道上的发送操作将会被阻塞，直到另外一个goroutine在对应的通道上执行接收操作，这时值传送完成，两个goroutine都可以继续执行。相反，如果接收操作先执行，接收方goroutine将阻塞，直到另一个goroutine在同一个通道上发送一个值。 ​    使用无缓冲通道进">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-11-06T15:28:53.335Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="sunsong�Ĳ���">
+<meta name="twitter:title" content="Golang素数问题">
+<meta name="twitter:description" content="goroutine多协程求素数问题无缓冲通道  ​    例子：ch :=make(chan int) ​    无缓冲通道上的发送操作将会被阻塞，直到另外一个goroutine在对应的通道上执行接收操作，这时值传送完成，两个goroutine都可以继续执行。相反，如果接收操作先执行，接收方goroutine将阻塞，直到另一个goroutine在同一个通道上发送一个值。 ​    使用无缓冲通道进">
   
     <link rel="alternative" href="/atom.xml" title="sunsong�Ĳ���" type="application/atom+xml">
   
@@ -126,16 +130,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-golang-groutine素数" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-golang-groutine素数" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/ssbk.github.io/2019/11/06/golang-groutine素数/">Golang素数问题</a>
+    <h1 class="article-title" itemprop="name">
+      Golang素数问题
     </h1>
   
 
@@ -171,16 +173,75 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/ssbk.github.io/2019/11/06/golang-groutine素数/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://s1026157562.github.io/ssbk.github.io/2019/11/06/golang-groutine素数/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/ssbk.github.io/2019/08/23/java基础回顾/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">java基础回顾</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -200,259 +261,14 @@
 
 
 
-
   
-    <article id="post-java基础回顾" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/ssbk.github.io/2019/08/23/java基础回顾/">java基础回顾</a>
-    </h1>
   
 
-        
-        <a href="/ssbk.github.io/2019/08/23/java基础回顾/" class="archive-article-date">
-  	<time datetime="2019-08-23T00:26:29.077Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-23</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="HashMap-和-HashSet区别"><a href="#HashMap-和-HashSet区别" class="headerlink" title="HashMap 和 HashSet区别"></a>HashMap 和 HashSet区别</h2><p>如果你看过 <code>HashSet</code> 源码的话就应该知道：HashSet 底层就是基于 HashMap 实现的。（HashSet 的源码非常非常少，因为除了 <code>clone()</code>、<code>writeObject()</code>、<code>readObject()</code>是 HashSet 自己不得不实现之外，其他方法都是直接调用 HashMap 中的方法。</p>
-<table>
-<thead>
-<tr>
-<th>HashMap</th>
-<th>HashSet</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>实现了Map接口</td>
-<td>实现Set接口</td>
-</tr>
-<tr>
-<td>存储键值对</td>
-<td>仅存储对象</td>
-</tr>
-<tr>
-<td>调用 <code>put（）</code>向map中添加元素</td>
-<td>调用 <code>add（）</code>方法向Set中添加元素</td>
-</tr>
-<tr>
-<td>HashMap使用键（Key）计算Hashcode</td>
-<td>HashSet使用成员对象来计算hashcode值，对于两个对象来说hashcode可能相同，所以equals()方法用来判断对象的相等性，</td>
-</tr>
-</tbody></table>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/ssbk.github.io/2019/08/23/java基础回顾/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-常用工具地址" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/ssbk.github.io/2019/08/22/常用工具地址/">常用工具地址</a>
-    </h1>
   
 
-        
-        <a href="/ssbk.github.io/2019/08/22/常用工具地址/" class="archive-article-date">
-  	<time datetime="2019-08-22T03:54:03.762Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="（一）在线编辑"><a href="#（一）在线编辑" class="headerlink" title="（一）在线编辑"></a>（一）在线编辑</h2><h3 id="PDF转Word转换器"><a href="#PDF转Word转换器" class="headerlink" title="PDF转Word转换器"></a><a href="https://smallpdf.com/cn/pdf-to-word" target="_blank" rel="noopener">PDF转Word转换器</a></h3><h3 id="JSON编辑器"><a href="#JSON编辑器" class="headerlink" title="JSON编辑器"></a><a href="https://www.bejson.com/jsoneditoronline" target="_blank" rel="noopener">JSON编辑器</a></h3><h3 id="MD表格生成器"><a href="#MD表格生成器" class="headerlink" title="MD表格生成器"></a><a href="https://tableconvert.com/?output=text" target="_blank" rel="noopener">MD表格生成器</a></h3><h3 id="CRON表达式"><a href="#CRON表达式" class="headerlink" title="CRON表达式"></a><a href="http://cron.qqe2.com/" target="_blank" rel="noopener">CRON表达式</a></h3><h3 id="代码格式化"><a href="#代码格式化" class="headerlink" title="代码格式化"></a><a href>代码格式化</a></h3><h3 id="在线编码转换"><a href="#在线编码转换" class="headerlink" title="在线编码转换"></a><a href="http://tool.chinaz.com/tools/native_ascii.aspx" target="_blank" rel="noopener">在线编码转换</a></h3><h3 id="yml-lt-—-gt-properties"><a href="#yml-lt-—-gt-properties" class="headerlink" title="yml &lt;—&gt; properties"></a><a href="https://www.toyaml.com/index.html" target="_blank" rel="noopener">yml &lt;—&gt; properties</a></h3><h2 id="（二）开源镜像"><a href="#（二）开源镜像" class="headerlink" title="（二）开源镜像"></a>（二）开源镜像</h2><h3 id="opsx（阿里）"><a href="#opsx（阿里）" class="headerlink" title="opsx（阿里）"></a><a href="https://opsx.alibaba.com/?lang=zh-CN" target="_blank" rel="noopener">opsx（阿里）</a></h3><h3 id="azure"><a href="#azure" class="headerlink" title="azure"></a><a href="https://mirror.azure.cn/" target="_blank" rel="noopener">azure</a></h3><h3 id="docker-Hub"><a href="#docker-Hub" class="headerlink" title="docker Hub"></a><a href="https://hub.docker.com/" target="_blank" rel="noopener">docker Hub</a></h3><h3 id="dao-cloud"><a href="#dao-cloud" class="headerlink" title="dao cloud"></a><a href="https://www.daocloud.io/" target="_blank" rel="noopener">dao cloud</a></h3>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/ssbk.github.io/2019/08/22/常用工具地址/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-java-异常处理" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/ssbk.github.io/2019/07/03/java-异常处理/">java(异常处理)</a>
-    </h1>
   
 
-        
-        <a href="/ssbk.github.io/2019/07/03/java-异常处理/" class="archive-article-date">
-  	<time datetime="2019-07-03T11:05:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-03</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="java异常类层次结构图"><a href="#java异常类层次结构图" class="headerlink" title="java异常类层次结构图"></a>java异常类层次结构图</h2><p>所有异常类的公共父类是Throwable类.</p>
-<p>Throwable:有两个重要的子类</p>
-<ol>
-<li>Exception(异常)</li>
-<li>Error(错误)</li>
-</ol>
-<p><strong>Error(错误):程序无法处理的错误.</strong></p>
-<p>​    表示运行应用程序中较严重的问题,大多数错误与代码编写者执行的操作无关,表示代码运行时JVM出现问题.比如,java虚拟机运行错误(Virtua MachineError),当JVM不再有继续执行操作所需要的内存资源时,将出现OutOfMemoryError.这些异常发生时,java虚拟机(JVM)一般会选择线程终止.</p>
-<p>​    这种错误标识发生于虚拟机本身,或者发生在虚拟及时图执行程序时,如java虚拟机运行错误(Virtua MachineError),类定义错误(NoClassDefFoundError)等.这些错误是不可查的,因为它们在程序的控制和处理能力之外,并且绝大多数是程序运行时不允许出现的情况.对于设计合理的程序来说,即使确实出现了错误,本质上也不应该试图去处理它所引发的异常情况,在java中,错误通过Error的子类错误.</p>
-<p><strong>Exception(异常):程序本身可以处理的异常.</strong></p>
-<p>​    Exception类有一个重要的子类<strong>RuntimeException</strong>.次异常是由虚拟机抛出.<strong>NullPointerException</strong>(要访问的子类没有引用任何对象时,抛出该异常),<strong>ArithmeticException</strong>(算数运算异常,一个整数除以0时,抛出该异常)和<strong>ArrayIndexOutOfBoundsException</strong>(下标越界异常)</p>
-<p>所以:异常和错误的区别在于,异常能被程序本身处理,错误是无法处理的.</p>
-<h2 id="Throwable类常用方法"><a href="#Throwable类常用方法" class="headerlink" title="Throwable类常用方法"></a>Throwable类常用方法</h2><ul>
-<li><p>public string getMessage();返回异常发生时的详细信息</p>
-</li>
-<li><p>public string toString();返回异常发生时的简要描述</p>
-</li>
-<li><p>public string getLocalizedMessage();返回异常对象的本地化信息.使用Throwable的子类覆盖这个方法,可以生成本地化信息.如果子类没有覆盖这个方法,则该方法的信息与getMessage()的返回结果是相同的.</p>
-</li>
-<li><p>public void printStackTtace();在控制台打印Throwable对象封装的信息.</p>
-</li>
-</ul>
-<h1 id="异常处理总结"><a href="#异常处理总结" class="headerlink" title="异常处理总结"></a>异常处理总结</h1><ul>
-<li><p>try块:用于捕获异常.其后可接零个或多个catch块,如果没有catch块,则必须跟一个finally块.</p>
-</li>
-<li><p>catch块:用于处理try捕获到的异常.</p>
-</li>
-<li><p>finally块:无论是否捕获或者处理异常,finally块里的语句始终会被执行.挡在try块或者catch块中遇到return语句时,finally语句块将在方法返回之前被执行.</p>
-</li>
-</ul>
-<p>在以下四种情况下,finally块不会被执行:</p>
-<ol>
-<li>在funally语句块第一行发生了异常.因为在其他行,finally块还是会被执行.</li>
-<li>在前面的代码中用了System.exit(int)已退出程序.exit是带参函数,若该语句在异常语句之后,finally会执行</li>
-<li>程序所在的线程死亡</li>
-<li>关闭cpu</li>
-</ol>
-<p>​    当try语句和finally语句中都有return语句时，在方法返回之前，finally语句的内容将被执行，并且finally语句的返回值将会覆盖原始的返回值。如下：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">f</span><span class="params">(<span class="keyword">int</span> value)</span> </span>&#123;</span><br><span class="line">      <span class="keyword">try</span> &#123;</span><br><span class="line">          <span class="keyword">return</span> value * value;</span><br><span class="line">      &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">          <span class="keyword">if</span> (value == <span class="number">2</span>) &#123;</span><br><span class="line">              <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">          &#125;</span><br><span class="line">      &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
-
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/ssbk.github.io/2019/07/03/java-异常处理/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
 
 
@@ -475,8 +291,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
